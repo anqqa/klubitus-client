@@ -3,29 +3,28 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"start": "react-native start",
-		"ios-bundle": "react-native bundle --dev false --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
-		"ios-dev-bundle": "react-native bundle --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
-		"android-bundle": "react-native bundle --dev false --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
-		"android-dev-bundle": "react-native bundle --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"ios-bundle": "node node_modules/react-native/local-cli/cli.js bundle --dev false --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
+		"ios-dev-bundle": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
+		"android-bundle": "node node_modules/react-native/local-cli/cli.js bundle --dev false --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
+		"android-dev-bundle": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
 		"web-bundle": "webpack --config web/webpack/web.prod.config.js --progress --colors",
 		"web-dev": "webpack-dev-server --content-base web/public/ --config web/webpack/web.dev.config.js --port 3001 --inline --hot --colors",
 		"clear-cache": "gulp clear-cache",
-
-		"start.old": "node node_modules/react-native/local-cli/cli.js start",
 		"test.old": "jest"
 	},
 	"dependencies": {
 		"babel": "^6.5.2",
 		"babel-polyfill": "^6.22.0",
 		"react": "~15.4.0-rc.4",
-		"react-native": "0.40.0",
+		"react-native": "^0.42.3",
 		"react-redux": "^5.0.2",
 		"redux": "^3.6.0",
 		"redux-thunk": "^2.2.0"
 	},
 	"devDependencies": {
 		"autoprefixer": "^6.7.0",
+		"babel-cli": "^6.22.2",
 		"babel-core": "^6.22.1",
 		"babel-jest": "18.0.0",
 		"babel-preset-react-native": "1.9.1",
