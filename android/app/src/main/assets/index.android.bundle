@@ -1243,15 +1243,15 @@ var _react2 = babelHelpers.interopRequireDefault(_react);
 
 var _reactNative = require(42            ); // 42 = react-native
 
-var KlubitusAndroid = function (_Component) {
-  babelHelpers.inherits(KlubitusAndroid, _Component);
+var Index = function (_Component) {
+  babelHelpers.inherits(Index, _Component);
 
-  function KlubitusAndroid() {
-    babelHelpers.classCallCheck(this, KlubitusAndroid);
-    return babelHelpers.possibleConstructorReturn(this, (KlubitusAndroid.__proto__ || Object.getPrototypeOf(KlubitusAndroid)).apply(this, arguments));
+  function Index() {
+    babelHelpers.classCallCheck(this, Index);
+    return babelHelpers.possibleConstructorReturn(this, (Index.__proto__ || Object.getPrototypeOf(Index)).apply(this, arguments));
   }
 
-  babelHelpers.createClass(KlubitusAndroid, [{
+  babelHelpers.createClass(Index, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -1277,10 +1277,10 @@ var KlubitusAndroid = function (_Component) {
       );
     }
   }]);
-  return KlubitusAndroid;
+  return Index;
 }(_react.Component);
 
-exports.default = KlubitusAndroid;
+exports.default = Index;
 
 
 var styles = _reactNative.StyleSheet.create({
@@ -1302,8 +1302,8 @@ var styles = _reactNative.StyleSheet.create({
   }
 });
 
-_reactNative.AppRegistry.registerComponent('KlubitusAndroid', function () {
-  return KlubitusAndroid;
+_reactNative.AppRegistry.registerComponent('ReactKlubitus', function () {
+  return ReactKlubitus;
 });
 }, 0, null, "ReactKlubitus/index.android.js");
 __d(/* react/react.js */function(global, require, module, exports) {'use strict';

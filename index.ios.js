@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-export default class KlubitusIOS extends Component {
+export default class Index extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -50,4 +50,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('KlubitusIOS', () => KlubitusIOS);
+AppRegistry.registerComponent('ReactKlubitus', () => Index);
